@@ -1,0 +1,517 @@
+* {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    /* overflow-x: hidden; */
+    /* position: relative; */
+ }
+body{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+   
+}
+.container{
+    background: url("/images/d.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem;
+    /* margin: rem; */
+    /* width: 100%;  */
+    height: 800px;
+    display: flex;
+    gap: 200px;
+}
+
+.container h1{
+    font-size: 35px;
+}
+
+nav img{
+    position: absolute;
+    left: 1rem;
+    top: -0.5rem;
+}
+
+li{
+  list-style-type: none;
+  margin: 7px;
+}
+
+img{
+    border-radius: 11px;
+}
+
+.navbar{
+  /* background-color: #f2f2f2; */
+  background-color: black;
+  width: 100%;
+}
+
+nav{
+    display: flex;
+    float: right;
+    background-color: transparent;
+    padding: 1.5rem;
+    position: fixed;
+    top: 0;
+    max-height: 100vh;
+    z-index: 3;
+}
+
+p{
+  justify-content: center;
+}
+nav a{
+    padding: 1.5rem;
+}
+
+nav h1{
+  position: absolute;
+  left: 6rem;
+  font-family:'Courier New', Courier, monospace;
+  padding: 5px;
+  top: 1rem;
+  color: goldenrod;
+}
+
+#navigation{
+    position: relative;
+    left: 33rem;
+}
+
+#hamburger{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: goldenrod;
+    font-weight: bold;
+    padding: 14px;
+    
+}
+
+nav a:hover{
+    color: white;
+    background-color: blueviolet;
+    border-radius: 11px;
+}
+
+.two{
+    width: 60%;
+       
+}
+
+
+.one,.three{
+    width: 30%;
+    padding: 2rem;
+    z-index: 2;   
+    color: #f2f2f2;
+}
+
+.one h1, .three h1{
+    color: black;
+}
+
+.scroll{
+    border: 2px solid goldenrod;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 200%;
+    padding: 12px;
+}
+.scroll-text{
+    text-align: right;
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+
+    -moz-animation: mb 5s linear infinite;
+    -webkit-animation: mb 5s linear infinite;
+    animation: mb 5s linear infinite;
+}
+
+.scroll-text span{
+    margin:0 15px;
+}
+
+@-webkit-keyframes mb {
+    from{-webkit-transform: translateX(-100%);}
+    to { -webkit-transform: translateX(100%);}
+}
+
+@keyframes mb {
+    from{
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    }
+    to{
+        -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    }
+}
+
+.container-2{
+    /* display: flex; */
+    background-color: white;
+    padding: 1rem;
+    min-height: 700px;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    width: 95%;
+    z-index: 2;
+    margin-bottom: 8rem;
+}
+
+.main-card{
+    display: flex;
+    gap: 100px;
+    padding: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-card{
+    display: flex;
+    gap: 10px;
+    padding: 1rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px #611eb3 solid;
+    line-height: 1em;
+    /* display: flex; */
+}
+
+.card:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+  }
+
+.container-3{
+    width: 80%;
+    background:linear-gradient(#611eb3,rgb(183, 109, 253)) ;
+    /* box-shadow: 3px 7px rgb(229, 229, 233); */
+    height: 800px;
+    border-radius: 12px ;
+    padding: 2rem;
+    height: 350px;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+.card-side{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    margin: 2rem;
+    
+}
+
+
+.card-side p{
+   font-size: 20px;
+   text-align: justify;
+   line-height: 1.5em;
+}
+
+.container-4{
+    margin: 5rem;
+    margin-top: 10rem;
+}
+
+.slideshow-container{
+    max-width: 2000px;
+    min-height: 75vh;
+    position: relative;
+    margin: auto;
+    background:linear-gradient(#611eb3,rgb(183, 109, 253)) ;
+    border-radius: 16px;
+   }
+   
+   /* Hide the images by default */
+   .mySlides{
+    display: none;
+   }
+ 
+   .mySlides img{
+     position: relative;
+     left: 10rem;
+     height: 300px;
+     top: 3rem;
+ 
+   }
+   
+   /* Next & previous buttons */
+   .prev, .next{
+   cursor: pointer;
+    position:absolute;
+    top:50%;
+    width:auto;
+    margin-top:-22px;
+    padding:16px;
+    color:white;
+    font-weight:bold;
+    font-size:18px;
+    transition:0.6s ease;
+    border-radius:0 3px 3px 0;
+    user-select:none;
+   }
+   
+   /* Position the "next button" to the right */
+   .next{
+    right:0;
+    border-radius:3px 0 0 3px;
+   }
+ 
+   .prev{
+     left: 0;
+   }
+   
+   
+   .prev:hover, .next:hover{
+   background-color:rgba(0,0,0,0.8);
+   }
+   
+   /* Caption text */
+   .text{
+    color: #f2f2f2;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 11rem;
+    right: 20rem;
+    width: 100%;
+    text-align: center;
+    font-family: cursive;
+   }
+   
+   .fade img{
+     height: 30%;
+   }  
+   /* The dots/bullets/indicators */
+   .dot{
+    cursor:pointer;
+    height:15px;
+    width:15px;
+    margin:0 2px;
+    background-color:#bbb;
+    border-radius:50%;
+    display:inline-block;
+    transition:background-color 0.6s ease;
+   }
+   
+   .active, .dot:hover{
+    background-color:#717171;
+   }
+   
+   /* Fading animation */
+   .fade{
+   animation-name:fade;
+   animation-duration: 1.5s;
+   }
+   
+   @keyframes fade{
+    from{opacity:0.4}
+    to {opacity: 1}
+   }
+
+.circle{
+    background-color: goldenrod;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 130rem;
+    right: 1rem;
+    z-index: -2;
+    text-align: center;
+}
+
+ footer{
+    background: linear-gradient(black,  rgb(58, 57, 57));
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer h4, footer h3{
+    margin: 1.5rem;
+    color: goldenrod;
+}
+
+.round{
+    background-color: goldenrod;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 2rem;
+    text-align: center;
+    color: white;
+    /* position: absolute; */
+    /* top: 130rem;
+    right: 1rem;
+    z-index: -2; */
+}
+
+.round h3, .round h1{
+    position: relative;
+    padding: 1rem ;
+    top: 5rem;
+}
+
+.round:hover{
+    background-color: #611eb3;
+    transition: ease-in 1s;
+}
+
+.container-5{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+/* @media only screen and (min-width: 300px) { */
+    
+@media (max-width: 768px){
+    #navigation {
+        display: none;
+       }
+    #navigation.opened {
+       display: block;
+       }
+       
+       nav h1{
+        display: none;
+       }
+
+       nav img{
+        top: -1.2rem;
+       }
+
+       .container{
+        padding: 3rem;
+        max-width: 90%;
+        height: 800px;
+        display:block;
+        gap: 0px;
+        background-position: center;
+        background-size:70rem;
+    }
+
+    .first-card{
+        display: block;
+        padding: 4px;
+        gap: 0;
+    }
+
+    .card-side{
+        display: block;
+        margin: 0;
+        height: 200px;
+        /* padding: 0; */
+
+    }
+
+    .one, .three{
+        width: 80%;
+        padding: 4px;
+    }
+
+    .three h1{
+        color: white;
+    }
+
+        .container-4{
+            width: 90%;
+            margin: 1rem;
+        }
+
+        .text{
+            bottom: 0;
+            right: 0;
+            font-size: 30px;
+        }
+  
+       .slideshow-container{
+        min-height: 40vh;
+        margin-bottom: 20%;
+       
+       }
+
+       .container-3{
+        display: block;
+        padding: 1rem;
+        height: 700px;
+        margin-bottom: 100px;
+       }
+
+
+       .mySlides img{
+        position: absolute;
+        height: 60%;
+        left: 5rem;
+       }
+       
+    .card-side p{
+       font-size: 15px;
+       /* display: flex;
+       flex-direction: column;
+       text-align: center; */
+       line-height: 1.5em;
+       
+    }
+
+    .container-5{
+        display: block;
+       }
+
+       .text{
+        font-size: 10px;
+        /* right: 0;
+        bottom: 0; */
+       }
+       .mySlides img{
+        left: 5.5rem;
+        top: 4rem;
+        width: 100%;
+       }
+
+   .two{
+    margin: 0.1px;
+    width: 90%;
+   }
+
+       /* nav h1, nav img {
+        top: 0.4rem;
+       }
+        */
+}
