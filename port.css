@@ -409,8 +409,8 @@ footer h4, footer h3{
        display: block;
        }
        
-       nav h1{
-        display: none;
+       body{
+           width: 100%;
        }
 
        nav img{
