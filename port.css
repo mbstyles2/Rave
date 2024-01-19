@@ -10,7 +10,7 @@ body{
    
 }
 .container{
-    background: url("/images/d.png");
+    background: url("images/d.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
