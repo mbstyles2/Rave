@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     max-width: 100%;
-    overflow-x: hidden; 
+    overflow: hidden; 
     /* position: relative; */
  }
 body{
@@ -20,6 +20,7 @@ body{
     height: 800px;
     display: flex;
     gap: 200px;
+    background-attachment: fixed;
 }
 
 .container h1{
@@ -56,6 +57,7 @@ nav{
     top: 0;
     max-height: 100vh;
     z-index: 3;
+    overflow: hidden; 
 }
 
 p{
@@ -175,6 +177,7 @@ nav a:hover{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    overflow: hidden; 
 }
 
 .first-card{
@@ -185,6 +188,7 @@ nav a:hover{
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    overflow: hidden; 
 }
 
 .card{
@@ -195,6 +199,7 @@ nav a:hover{
     border-radius: 12px;
     border: 1px #611eb3 solid;
     line-height: 1em;
+    overflow: hidden; 
     /* display: flex; */
 }
 
@@ -214,6 +219,7 @@ nav a:hover{
     height: 350px;
     color: white;
     font-family:'Times New Roman', Times, serif;
+    overflow: hidden; 
 }
 
 
