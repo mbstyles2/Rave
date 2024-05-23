@@ -264,16 +264,22 @@ nav a:hover{
    line-height: 1.5em;
 }
 
+
 .container-4{
     margin-top: 10rem;
-    background: linear-gradient(grey,black ); 
+    background: url('/images/yh.jpg');
+    background-size: cover;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 2rem;
     min-width: 1080px;
-    height: 600px;
+    height: 700px;
     border-radius: 12px;
+    font-size: 20px;
 }
 
 .slideshow-container{
@@ -282,10 +288,14 @@ nav a:hover{
     border-radius: 10%;
     position: relative;
     margin: auto;
-    background-color: goldenrod;
-    /* background:linear-gradient(#611eb3,rgb(183, 109, 253)) ; */
-    /* border-radius: 16px; */
-   }
+    /* background-color: goldenrod; */
+    background: repeating-linear-gradient(
+        40deg,
+    #FFBF00,
+    goldenrod 20px,
+    #FFAC1C 30px
+    );  
+}
    
    /* Hide the images by default */
    .mySlides{
