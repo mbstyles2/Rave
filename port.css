@@ -21,7 +21,7 @@ body{
     border-radius: 14px;
     padding: 1rem ;
     /* height: 1900px; */
-    margin-top: 24rem;
+    margin-top: 20rem;
     transform: skewY(-10deg);
 
 }
@@ -48,7 +48,7 @@ body{
 nav img{
     position: absolute;
     left: 1rem;
-    top: -0.5rem;
+    top: 0.5rem;
 }
 
 
