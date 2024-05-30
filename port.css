@@ -7,10 +7,26 @@
 body{
     overflow-x: hidden;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    /* justify-content: center; */
-
-   
+    /* justify-content: center; */ 
 }
+
+.entry{
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 9px;
+    padding: 30px 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.entry:hover{
+    background-color: blueviolet;
+    color: black;
+    border: 3px solid black;
+}
+
 .highlight{
     background: url("/images/43.jpeg");
     background-position: center;
@@ -19,9 +35,15 @@ body{
     min-width: 1080px;
     border-radius: 14px;
     padding: 1rem ;
+    font-family: 'Courier New', Courier, monospace;
     /* height: 1900px; */
     margin-top: 10rem;
 }
+
+.fas{
+    font-size: 30px;
+}
+
 .container{
     background: url("/images/d.png");
     background-position: center;
@@ -33,11 +55,14 @@ body{
     background-attachment: fixed;
     gap: 400px;
     justify-content: center;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
     /* text-align: center;  */
     /* margin-top: 12rem; */
 }
-
-
+.container p{
+    color: gold;
+}
 .container h1{
     font-size: 35px;
 }
@@ -50,7 +75,6 @@ nav img{
     top: 1rem;
 
 }
-
 
 li{
   list-style-type: none;
@@ -65,7 +89,7 @@ img{
   /* background-color: #f2f2f2; */
   background-color: black;
   width: 100%;
-  min-height: 5vh;
+  min-height: 7vh;
 }
 
 nav{
@@ -285,12 +309,19 @@ nav a:hover{
     font-size: 20px;
 }
 
+.container-4 h1{
+    margin-bottom: 20px;
+    padding-top: 40px;
+}
+
 .slideshow-container{
-    width: 800px;
-    height: 500px;
+    height: 900px;
+    width: 600px;
+    min-height: 50vh;
     border-radius: 10%;
     position: relative;
     margin: auto;
+    padding: 90px;
     /* background-color: goldenrod; */
     background: repeating-linear-gradient(
         40deg,
@@ -308,11 +339,10 @@ nav a:hover{
  
    .mySlides img{
      /* position: relative; */
-     margin-left: 10rem;
-     height: 300px;
-     top: 3rem;
-     width: 40%;
-     max-width: 100%;
+     width: 100%;
+     max-height:100%;
+     object-fit: contain;
+     /* max-width: 100%; */
  
    }
    
@@ -442,8 +472,9 @@ footer h4, footer h3{
 
 .container-5{
     display: flex;
+    
     justify-content: center;
-    margin-top: 15rem;
+    margin-top: 10rem;
 }
 
 .street{
@@ -495,7 +526,7 @@ footer h4, footer h3{
        .slideshow-container{
         min-height: 40vh;
         margin-bottom: 20%;
-       
+        padding: 0;
        }
 
        .container-4{
@@ -622,11 +653,10 @@ body{
         transition: ease-in 0.5s;
         margin-top: 4rem;
     }
- /* footer, .navbar{
-    width: 91.5%;
-} */
+
+
 .circle{
-    display: none;
+    /* display: none; */
 }
     .container-4{
         margin-bottom: 100px;
@@ -646,6 +676,7 @@ body{
         top: 3rem;
         margin: auto;
         background-color: goldenrod;
+        padding: 0;
        }
 
  
@@ -778,7 +809,7 @@ body{
        .slideshow-container{
         min-height: 40vh;
         margin-bottom: 20%;
-       
+        padding: 0;
        }
 
        .container-3{
@@ -824,5 +855,3 @@ body{
     margin: 0.1px;
     width: 90%;
 }
-
-       
