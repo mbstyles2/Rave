@@ -11,20 +11,24 @@ body{
 }
 
 .entry{
-    background-color: orange;
+    background-color: gold;
     color: black;
-    border: none;
+    /* border: none; */
     border-radius: 9px;
     padding: 30px 40px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     font-weight: bold;
+    border: 3px solid black;
+    margin-top: 3rem;
 }
 
 .entry:hover{
-    background-color: blueviolet;
-    color: black;
-    border: 3px solid black;
+    background-color: black;
+    color: gold;
+    border: 3px solid gold;
+    padding: 24px 35px;
+    transition: ease-in-out 1s;
 }
 
 .highlight{
@@ -45,7 +49,8 @@ body{
 }
 
 .container{
-    background: url("/images/d.png");
+    /* background: #363434; */
+    background: url("/images/eag23.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,6 +67,9 @@ body{
 }
 .container p{
     color: gold;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 .container h1{
     font-size: 35px;
@@ -72,7 +80,7 @@ body{
 nav img{
     position: absolute;
     left: 1rem;
-    top: 1rem;
+    top: 1.7rem;
 
 }
 
@@ -130,6 +138,7 @@ nav h1{
 #navigation{
     position: relative;
     left: 33rem;
+    
 }
 
 #hamburger{
@@ -141,12 +150,12 @@ a{
     color: goldenrod;
     font-weight: bold;
     padding: 14px;
-    
+    font-family: 'Courier New', Courier, monospace;
 }
 
 nav a:hover{
     color: white;
-    background-color: blueviolet;
+    background-color: none;
     border-radius: 11px;
 }
 
@@ -166,6 +175,8 @@ nav a:hover{
     padding: 2rem;
     z-index: 2;   
     color: #f2f2f2;
+    /* margin-right: 15rem; */
+    
 }
 
 .one h1, .three h1{
@@ -251,9 +262,10 @@ nav a:hover{
     padding: 10px;
     background-color: white;
     border-radius: 12px;
-    border: 2px #611eb3 solid;
+    border: 2px black solid;
     line-height: 1em;
-    /* display: flex; */
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 .card:hover{
@@ -265,7 +277,7 @@ nav a:hover{
 
 .container-3{
     width: 75%;
-    background:linear-gradient(#611eb3,rgb(183, 109, 253)) ;
+    background: linear-gradient(black,  rgb(58, 57, 57));
     /* box-shadow: 3px 7px rgb(229, 229, 233); */
     height: 800px;
     border-radius: 12px ;
@@ -316,8 +328,8 @@ nav a:hover{
 
 .slideshow-container{
     height: 900px;
-    width: 600px;
-    min-height: 50vh;
+    width: 900px;
+    /* min-height: 50vh; */
     border-radius: 10%;
     position: relative;
     margin: auto;
@@ -380,10 +392,10 @@ nav a:hover{
    /* Caption text */
    .text{
     color: #f2f2f2;
-    font-size: 28px;
-    padding: 8px 12px;
+    font-size: 24px;
+    padding: 20px 12px;
     position: absolute;
-    bottom: 11rem;
+    bottom: 1rem;
     right: 20rem;
     width: 100%;
     text-align: center;
@@ -422,11 +434,11 @@ nav a:hover{
 
 .circle{
     background-color: goldenrod;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     position: absolute;
-    top: 125rem;
+    top: 130rem;
     right: 5rem;
     z-index: -2;
     text-align: center;
@@ -437,6 +449,7 @@ nav a:hover{
     color: white;
     padding: 2rem;
     text-align: center;
+    font-family:'Courier New', Courier, monospace;
 }
 
 footer h4, footer h3{
@@ -466,8 +479,10 @@ footer h4, footer h3{
 }
 
 .round:hover{
-    background-color: #611eb3;
+    background-color: black;
+    color: gold;
     transition: ease-in 1s;
+    border: 2px solid goldenrod;
 }
 
 .container-5{
@@ -563,6 +578,7 @@ footer h4, footer h3{
 }
 .container{
     display: block;
+
 }
 
 body{
@@ -590,6 +606,7 @@ body{
         position: relative;
         cursor: pointer;
         left: 0rem;
+     
     }
     .navbar {
         flex-direction: column;
@@ -613,6 +630,7 @@ body{
         text-decoration: dashed; */
         position: relative;
         left: 5rem;
+        transition: ease-in-out 3s;
     }
 
     #navigation a {
@@ -652,13 +670,10 @@ body{
         background-attachment: fixed;
         transition: ease-in 0.5s;
         margin-top: 4rem;
-    }
-
-
-.circle{
-    /* display: none; */
 }
-    .container-4{
+
+
+.container-4{
         margin-bottom: 100px;
         min-width: 100px;
         padding: 0rem;
@@ -666,7 +681,7 @@ body{
         text-align: center;
         height: 450px;
         border-radius: 12px;
-    }
+}
     
     .slideshow-container{
         width: 400px;
@@ -807,7 +822,7 @@ body{
         }
   
        .slideshow-container{
-        min-height: 40vh;
+        /* min-height: 40vh; */
         margin-bottom: 20%;
         padding: 0;
        }
@@ -855,3 +870,5 @@ body{
     margin: 0.1px;
     width: 90%;
 }
+
+       
