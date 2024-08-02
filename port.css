@@ -10,6 +10,42 @@ body{
     /* justify-content: center; */ 
 }
 
+.bold{
+    font-weight: bolder;
+}
+
+@keyframes farot {
+    from{
+        opacity: 0;
+        transform: rotate(0deg);
+        }
+    to {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+
+.fa-ro{
+    color: white;
+    font-size: 3em;
+    text-shadow:  20px 20px 40px rgba(243, 239, 239, 0.5);
+    position: relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    animation: farot 3s ease-in-out;
+}
+
+/* .fa-ro::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    color: #fff;
+    box-shadow: inset 10px 10px 20px rgba(243, 239, 239, 0.5);
+} */
+
 .entry{
     background-color: gold;
     color: black;
@@ -21,6 +57,7 @@ body{
     font-weight: bold;
     border: 3px solid black;
     margin-top: 3rem;
+    animation: farot 3s ease-in-out;
 }
 
 .entry:hover{
@@ -49,14 +86,14 @@ body{
 }
 
 .container{
-    /* background: #363434; */
-    background: url("/images/eag23.png");
+    background: black;
+    /* background: url("/images/eag23.png"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     padding: 4rem;
-    height: 800px;
+    height: 400px;
     background-attachment: fixed;
     gap: 400px;
     justify-content: center;
@@ -67,12 +104,14 @@ body{
 }
 .container p{
     color: gold;
-    display: flex;
-    flex-wrap: wrap;
+    text-align: justify;
+    text-justify: inter-word;
+    animation: farot 3s ease-in-out;
 
 }
 .container h1{
     font-size: 35px;
+    animation: farot 3s ease-in-out;
 }
 .openbtn, .closebtn{
     display: none;
@@ -156,7 +195,8 @@ a{
 nav a:hover{
     color: white;
     background-color: none;
-    border-radius: 11px;
+    border-radius: 5px;
+    padding: 1.2rem;
 }
 
 /* .navbar:hover, nav:hover{
@@ -230,7 +270,6 @@ nav a:hover{
     min-height: 700px;
     text-align: center;
     justify-content: center;
-    align-self: center;
     /* width: 95%; */
     z-index: 2;
     margin-bottom: 8rem;
@@ -258,7 +297,7 @@ nav a:hover{
 
 .card{
     width: 300px;
-    height: 300px;
+    height: 350px;
     padding: 10px;
     background-color: white;
     border-radius: 12px;
@@ -266,6 +305,7 @@ nav a:hover{
     line-height: 1em;
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
+    text-align: justify;
 }
 
 .card:hover{
@@ -626,11 +666,11 @@ body{
         flex-direction: column;
         align-items: flex-start;
         background-color: black;
-        /* border: none;
-        text-decoration: dashed; */
+        padding: 12rem;
         position: relative;
-        left: 5rem;
+        right: 3rem;
         transition: ease-in-out 3s;
+
     }
 
     #navigation a {
@@ -792,7 +832,7 @@ body{
     .card-side{
         display: block;
         margin: 0;
-        height: 200px;
+        height: 150px;
         /* padding: 0; */
 
     }
@@ -830,7 +870,7 @@ body{
        .container-3{
         display: block;
         padding: 1rem;
-        height: 700px;
+        height: 600px;
         margin-bottom: 100px;
        }
 
