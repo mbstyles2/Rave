@@ -28,10 +28,7 @@ body{
 .fa-ro{
     color: white;
     font-size: 3em;
-    text-shadow:  20px 20px 40px rgba(243, 239, 239, 0.5);
-    position: relative;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    animation: farot 3s ease-in-out;
+    text-shadow:  9px 9px 10px rgba(233, 227, 228, 0.89), 4px 5px 0 rgba(182, 179, 179, 0.8) ;
 }
 
 /* .fa-ro::before{
