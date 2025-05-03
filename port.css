@@ -94,7 +94,7 @@ body{
     background-attachment: fixed;
     gap: 400px;
     justify-content: center;
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     font-weight: bold;
     /* text-align: center;  */
     /* margin-top: 12rem; */
