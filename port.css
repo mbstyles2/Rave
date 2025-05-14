@@ -300,9 +300,9 @@ nav a:hover{
     border-radius: 12px;
     border: 2px black solid;
     line-height: 1em;
-    font-family:'Courier New', Courier, monospace;
+    font-family: Georgia;
     font-weight: bold;
-    text-align: justify;
+    text-align: center;
 }
 
 .card:hover{
