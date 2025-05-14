@@ -49,7 +49,7 @@ body{
     /* border: none; */
     border-radius: 9px;
     padding: 30px 40px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Tahoma;
     font-size: 20px;
     font-weight: bold;
     border: 3px solid black;
@@ -94,7 +94,7 @@ body{
     background-attachment: fixed;
     gap: 400px;
     justify-content: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-family: Tahoma; 
     font-weight: bold;
     /* text-align: center;  */
     /* margin-top: 12rem; */
@@ -102,7 +102,7 @@ body{
 .container p{
     color: gold;
     text-align: justify;
-    text-justify: inter-word;
+    line-height: 1.5;
     animation: farot 3s ease-in-out;
 
 }
