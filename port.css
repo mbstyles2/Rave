@@ -302,7 +302,8 @@ nav a:hover{
     line-height: 1em;
     font-family: Georgia;
     font-weight: bold;
-    text-align: center;
+    text-align: justify;
+    word-spacing: 0.2em;
 }
 
 .card:hover{
